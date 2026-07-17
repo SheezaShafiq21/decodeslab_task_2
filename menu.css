@@ -1,0 +1,327 @@
+body{
+    margin:0;
+}
+
+img{
+    display: block;
+    width:300px;
+    height:150px;
+}
+.logo{
+     width: 300px;
+    height:150px;
+}
+
+header{
+    display:flex;
+    background: rgb(90, 84, 84);
+    align-items: center;
+    justify-content:space-between ;
+    flex-wrap: nowrap;
+    height: 150px;
+}
+nav {
+    flex:1;
+    display: flex;
+    justify-content: center;   
+    gap: 60px;
+    flex-wrap: nowrap; 
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: rgb(189, 142, 54);
+}
+
+nav a.active{
+    color:rgb(189, 142, 54);
+}
+
+footer{
+    
+    background:rgb(77, 54, 54);
+    color: aliceblue;
+    height:330px;
+    text-align: center;
+    padding:28px;
+    
+}
+footer a{
+    color:rgb(225, 232, 239);
+    text-decoration: none;
+    font-size: 23px;
+}
+
+footer a:hover{
+     color: rgb(189, 142, 54);
+}
+
+.social a{
+    color: white;
+    font-size: 37px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.heading{
+    font-weight:bold;
+    font-size: 27px;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+.copy{
+    font-weight:bold;
+    font-size: 22px;
+}
+
+section img{
+    
+    
+    
+    width: 300px;
+    height: 400;
+}
+
+.products{
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    margin-top: 20px;
+    width:350px;
+   background-color: #D2B48C;
+    border-radius:10px;
+    padding:12px;
+    text-align:center;
+    border: 1.5px solid #6F4E37;
+}
+
+.card img{
+    width:100%;
+    height:320px;      
+    object-fit:cover;
+    border-radius:8px;
+}
+
+button{
+    width: 330px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #8B5E3C;
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+button:hover{
+    background:rgb(135, 129, 119);
+}
+.card h3{
+    margin:15px 0 5px;
+    font-size:26px;
+    color: #3E2723;
+}
+
+.card p{
+    margin:0;
+    
+    font-size:24px;
+    font-weight:bold;
+   color: #3E2723;
+font-weight: bold;
+}
+
+.menuback{
+    background: #EADBC8;
+    
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(216, 146, 40);
+    margin-bottom: 70px;
+}
+
+
+.hot{
+    margin-top: 150px;
+
+
+}
+
+
+
+
+@media (max-width:1030px){
+
+    .logo{
+        
+        width:180px;
+        height:auto;
+    }
+   img{
+        width:160px;
+        height:auto;
+    }
+
+    nav{
+        gap:20px;
+    }
+
+    nav a{
+        font-size:18px;
+    }
+
+
+    .products{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:25px;
+    }
+
+    .card{
+        width:280px;
+    }
+
+    .card img{
+        height:260px;
+    }
+
+    button{
+        width:260px;
+        font-size:18px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    .hot{
+        margin-top:80px;
+    }
+
+    footer{
+        height:auto;
+        padding:20px;
+    }
+
+    footer a{
+        font-size:18px;
+    }
+
+    .heading{
+        font-size:22px;
+    }
+
+    .social a{
+        font-size:28px;
+    }
+
+    .copy{
+        font-size:16px;
+    }
+
+}
+
+
+
+
+@media (max-width:600px){
+.logo{
+     width:180px;
+        height:auto;
+}
+     header{
+        flex-direction:column;
+        height:auto;
+        padding:15px 0;
+    }
+
+    img{
+        width:160px;
+        height:auto;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        width:100%;
+        align-items:center;
+    }
+    nav a{
+        font-size:14px;
+    }
+
+    .products{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .card{
+        width:90%;
+        max-width:320px;
+    }
+
+    .card img{
+        height:250px;
+    }
+
+    button{
+        width:90%;
+        font-size:16px;
+        height:45px;
+    }
+
+    h1{
+        font-size:30px;
+        margin-bottom:40px;
+    }
+
+    .hot{
+        margin-top:60px;
+    }
+
+    footer{
+        height:auto;
+        padding:15px;
+    }
+
+    footer a{
+        font-size:14px;
+    }
+
+    .heading{
+        font-size:18px;
+    }
+
+    .social a{
+        font-size:22px;
+    }
+
+    .copy{
+        font-size:12px;
+    }
+
+}
+.cart{
+    color:white;
+    font-size:28px;
+    margin-right:30px;
+}
+
+.cart:hover{
+    color:rgb(189,142,54);
+}
